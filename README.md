@@ -8,11 +8,12 @@ As I improve my skills, I will be commiting new features and coding best practic
 Head to https://gbeserra95.github.io/myTasks/ to use the app!
 
 ## Usage
+
+Get organized with **myTasks**, your dynamic list that will help you with studies and other daily tasks. Change the order of your list by **dragging** and **dropping** items between them. Press **enter** or click **Adicionar** to add a new item.
+
 <div align="center">
   <img src="https://user-images.githubusercontent.com/47508755/146040010-58be3c64-77a6-48c5-ba1e-a62fece54c21.jpeg" alt="myTasks">
 </div>
-
-Get organized with **myTasks**, your dynamic list that will help you with studies and other daily tasks. Change the order of your list by **dragging** and **dropping** items between them. Press **enter** or click **Adicionar** to add a new item.
 
 ## Project requirements
 
