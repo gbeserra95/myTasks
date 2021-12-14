@@ -1,6 +1,6 @@
 # myTaks
 
-### A JavaScript TO-DO list developed by me as part of my studies in [DEVinHouse](https://github.com/gbeserra95/DEVinHouse).
+A JavaScript TO-DO list developed by me as part of my studies in [DEVinHouse](https://github.com/gbeserra95/DEVinHouse).
 
 ## Project requirements
 
