@@ -1,8 +1,8 @@
 # myTaks
 
-## myTasks is a JavaScript TO-DO list developed by me as part of my studies in [DEVinHouse](https://github.com/gbeserra95/DEVinHouse).
+### myTasks is a JavaScript TO-DO list developed by me as part of my studies in [DEVinHouse](https://github.com/gbeserra95/DEVinHouse).
 
-**Project requirements**
+## Project requirements
 
 The application must have:
 
