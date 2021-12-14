@@ -1,0 +1,147 @@
+body {
+  max-width: 1020px;
+  margin: auto;
+  overflow: scroll;
+  background-color: rgb(238, 238, 238);
+}
+
+:root {
+  --first-color: rgb(255, 0, 117);
+  --second-color: rgb(23, 39, 116);
+  --third-color: rgb(119, 217, 112);
+}
+
+#header {
+  display: flex;
+  height: 5rem;
+  background-image: linear-gradient(
+    to right,
+    var(--first-color),
+    var(--second-color),
+    var(--third-color)
+  );
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+}
+
+#inputs div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#inputs input {
+  color: grey;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  border: 2px solid var(--second-color);
+  border-right: hidden;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  height: 2.5rem;
+  width: 100%;
+}
+
+#inputs input::placeholder {
+  color: grey;
+}
+
+#inputs input:focus {
+  outline: none;
+  color: var(--first-color);
+  border: 2px solid var(--second-color);
+  border-right: hidden;
+}
+
+#inputs button {
+  width: 10rem;
+  border: 2px solid var(--second-color);
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--second-color);
+  transition: 0.2s;
+}
+
+#inputs button:disabled {
+  color: grey;
+  background-color: lightgrey;
+}
+
+#inputs button:enabled:hover {
+  cursor: pointer;
+  background-color: var(--first-color);
+}
+
+#inputs p {
+  padding: 0 0.5rem;
+  text-align: center;
+  color: grey;
+  font-size: 0.8rem;
+  font-family: Arial;
+  line-height: 1.6;
+}
+
+#inputs p span {
+  color: var(--second-color);
+  font-weight: bold;
+}
+
+#list ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+#list ul li {
+  margin: auto 0.5rem;
+  padding: 1rem 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid lightgrey;
+}
+
+#list ul li div {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-family: Arial;
+  color: var(--second-color);
+  font-weight: bold;
+}
+
+label {
+  cursor: pointer;
+}
+
+.checkbox {
+  cursor: pointer;
+  margin-right: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+.icon-trash {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  transition: 0.2s;
+}
+
+.icon-trash:hover {
+  color: var(--third-color);
+}
+
+footer p {
+  text-align: center;
+  color: grey;
+  font-size: 0.6rem;
+  font-family: Arial;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myTasks</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/icomoon/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div id="header">myTasks</div>
+    </header>
+    <!-- Main -->
+    <main>
+      <div id="inputs">
+        <p>
+          Organize-se com o <span>myTasks</span>, a sua lista dinâmica que irá
+          lhe ajudar com os estudos e demais tarefas do dia a dia. Altere a
+          ordem da sua lista <span>arrastando</span> e <span>soltando</span> os
+          itens entre eles. Pressione <span>enter</span> ou clique em
+          <span>adicionar</span> para incluir um novo item.
+        </p>
+        <div>
+          <input
+            id="newTask"
+            spellcheck="false"
+            type="text"
+            placeholder="Digite a sua tarefa"
+          />
+          <button id="btnAdd" disabled>Adicionar</button>
+        </div>
+      </div>
+      <div id="list">
+        <ul></ul>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; myTasks, Gabriel Beserra<br />
+        DEVinHouse, Novembro 2021
+      </p>
+    </footer>
+    <!-- Scripts -->
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
