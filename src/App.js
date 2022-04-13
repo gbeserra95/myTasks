@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { LanguageProvider } from './contexts/language'
+import { ItemsProvider } from './contexts/items'
 
 import Navigation from './components/Navigation'
 import Header from './components/Header'
@@ -14,10 +15,9 @@ import { lightTheme, darkTheme } from "./styles/themes"
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false)
-  const [items, setItems] = useState([])
 
   useEffect(() => {
-    function handleLoadingDataFromLocalStorage() {
+    function handleLoadingThemeFromLocalStorage() {
       const storedTheme = JSON.parse(localStorage.getItem("isDarkTheme"))
       if (storedTheme === null) {
         localStorage.setItem("isDarkTheme", false)
@@ -25,33 +25,27 @@ function App() {
       } else {
         setIsDarkTheme(JSON.parse(localStorage.getItem("isDarkTheme")))
       }
-
-      const storedItems = JSON.parse(localStorage.getItem("items"))
-      if (storedItems === null) {
-        localStorage.setItem("items", JSON.stringify([]))
-        setItems([])
-      } else {
-        setItems(storedItems)
-      }
     }
 
-    handleLoadingDataFromLocalStorage()
-  }, [items])
+    handleLoadingThemeFromLocalStorage()
+  }, [])
 
   return (
       <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
         <LanguageProvider>
-          <GlobalStyle />
-          <Navigation 
-            isDarkTheme={isDarkTheme} 
-            setIsDarkTheme={setIsDarkTheme} 
-          />
-          <Header />
-          <Main>
-            <Instruction />
-            <Input items={items} setItems={setItems}/>
-            <List items={items} setItems={setItems} />
-          </Main>
+          <ItemsProvider>
+            <GlobalStyle />
+            <Navigation 
+              isDarkTheme={isDarkTheme} 
+              setIsDarkTheme={setIsDarkTheme} 
+            />
+            <Header />
+            <Main>
+              <Instruction />
+              <Input />
+              <List />
+            </Main>
+          </ItemsProvider>
         </LanguageProvider>
       </ThemeProvider>
   )

@@ -1,26 +1,18 @@
 import { useContext } from 'react';
 import { LanguageContext } from '../../contexts/language';
+import { ItemsContext } from '../../contexts/items';
 import React, { useState } from 'react';
 import * as S from "./styles"
 
-function Input({items, setItems}) {
+function Input() {
     const { language } = useContext(LanguageContext)
+    const { addNewItem } = useContext(ItemsContext)
     const [userInput, setUserInput] = useState([])
 
     function handleSubmit(event) {
         event.preventDefault()
 
-        const id = items.length ? items.length : 0
-
-        const newItem = {
-            id: id,
-            item: userInput,
-            checked: false
-        }
-
-        localStorage.setItem("items", JSON.stringify([...items, newItem])) 
-
-        setItems([...items, newItem])     
+        addNewItem(userInput)
         setUserInput("")   
     }
 

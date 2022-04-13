@@ -1,8 +1,10 @@
-import React from "react"
+import React, { useContext } from "react"
+import { ItemsContext } from "../../contexts/items";
 import * as S from "./styles"
 import Checkbox from "../Checkbox";
 
-function List({items, setItems}) {
+function List() {
+  const { items, setItems } = useContext(ItemsContext)
 
   function handleCheckUncheck(item) {
     let myObj = items
