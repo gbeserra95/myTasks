@@ -1,14 +1,16 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useContext } from 'react';
+import { LanguageContext } from '../../contexts/language';
 import * as S from './styles';
 import { LANGUAGES } from "../../helpers/languages" 
 
-function LanguageDropDown({language, setLanguage}) {
+
+function LanguageDropDown() {
   const ref = useRef()
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { language, setLanguage } = useContext(LanguageContext)
 
   function handleSelectedLanguage(value) {
-    localStorage.setItem("language", value.value)
     setIsMenuOpen(false)
     setLanguage(value.value)
   }

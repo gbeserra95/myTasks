@@ -1,6 +1,10 @@
+import { useContext } from 'react';
+import { LanguageContext } from '../../contexts/language';
 import * as S from './styles';
 
-function Instruction({language}) {
+function Instruction() {
+  const { language } = useContext(LanguageContext)
+   
   return (
     <>
       {
@@ -16,7 +20,7 @@ function Instruction({language}) {
           </S.Container>
         ) : (
           <S.Container>
-            Organízate con <span>myTasks</span>, tu lista dinámica que te ayudará con tus estudios y otras tareas cotidianas. Cambie el orden de su lista <span>arrastrando</span> y <span>soltando</span> los elementos entre ellos. Presiona <span>enter</span> o haz un clic en <span>agregar</span> para agregar un nuevo elemento.
+            Organízate con <span>myTasks</span>, tu lista dinámica que te ayudará con tus estudios y otras tareas cotidianas. Cambie el orden de su lista <span>arrastrando</span> y <span>soltando</span> los elementos entre ellos. Presiona <span>enter</span> o haz un clic en <span>añadir</span> para agregar un nuevo elemento.
         </S.Container>
         )
       }

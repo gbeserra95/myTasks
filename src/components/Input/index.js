@@ -1,7 +1,10 @@
+import { useContext } from 'react';
+import { LanguageContext } from '../../contexts/language';
 import React, { useState } from 'react';
 import * as S from "./styles"
 
-function Input({language, items, setItems}) {
+function Input({items, setItems}) {
+    const { language } = useContext(LanguageContext)
     const [userInput, setUserInput] = useState([])
 
     function handleSubmit(event) {
