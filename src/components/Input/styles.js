@@ -23,10 +23,10 @@ export const Form = styled.form`
     }
 
     &:focus {
-    outline: none;
-    color: ${props => props.theme.text.input};
-    border: 2px solid ${props => props.theme.text.bold};
-    border-right: hidden;
+      outline: none;
+      color: ${props => props.theme.text.input};
+      border: 2px solid ${props => props.theme.text.bold};
+      border-right: hidden;
     }
   }
 

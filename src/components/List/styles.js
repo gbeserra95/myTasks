@@ -23,13 +23,6 @@ export const Item = styled.li`
     align-items: center;
     border-bottom: 2px solid ${props => props.theme.input.placeHolder};
     transition: 0.2s;
-
-    div {
-        display: flex;
-        align-items: center;
-        color: ${props => props.theme.text.bold};
-        font-weight: bold;
-    }
 `
 
 export const TrashIcon = styled(Trash)`
