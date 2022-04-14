@@ -29,19 +29,17 @@ export const Container = styled.div`
 
     input {
         background-color: ${props => props.theme.background};
-        color: ${props => props.theme.input.color};
+        color: ${props => props.theme.button.hover};
         font-size: 1rem;
         font-weight: bold;
-        border: 2px solid ${props => props.theme.input.border};
-        border-radius: 0.5rem;
+        border: hidden;
         height: 1.5rem;
-        padding-left: 0.5rem;
         width: 100%;
 
         &:focus {
         outline: none;
-        color: ${props => props.theme.input.color};
-        border: 2px solid ${props => props.theme.text.bold};
+        color: ${props => props.theme.button.hover};
+        border: hidden;
         }
     }
 `

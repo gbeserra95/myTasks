@@ -8,6 +8,7 @@ import Main from './components/Main'
 import Instruction from './components/Instruction'
 import Input from './components/Input'
 import List from './components/List'
+import Footer from './components/Footer'
 
 import { GlobalStyle } from './styles/globalStyles'
 import { ThemeProvider } from 'styled-components'
@@ -45,6 +46,7 @@ function App() {
               <Input />
               <List />
             </Main>
+            <Footer />
           </ItemsProvider>
         </LanguageProvider>
       </ThemeProvider>
