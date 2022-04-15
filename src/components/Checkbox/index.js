@@ -14,12 +14,18 @@ function Checkbox({onClick, checked, item}) {
     event.preventDefault()
 
     if(updatedItem) {
-      let myObj = items
-      myObj[item.id] = {
-         id: item.id,
-         item: updatedItem,
-         checked: item.checked
-       }
+      let myObj = items.map(element => {
+        if (element.id === item.id) {
+          return ({
+              id: item.id,
+              item: updatedItem,
+              checked: item.checked
+          })
+        }
+
+        return element
+      })
+        
        localStorage.setItem("items", JSON.stringify(myObj))
        setItems(myObj)
        setItemToEdit(false)

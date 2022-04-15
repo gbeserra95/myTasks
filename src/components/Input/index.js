@@ -12,7 +12,7 @@ function Input() {
     function handleSubmit(event) {
         event.preventDefault()
 
-        addNewItem(userInput)
+        addNewItem(userInput.trim())
         setUserInput("")   
     }
 

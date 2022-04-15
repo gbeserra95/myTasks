@@ -1,4 +1,5 @@
 import { useState, useEffect, createContext } from "react";
+import { v4 as uuid4 } from "uuid"
 
 export const ItemsContext = createContext([])
 
@@ -6,7 +7,7 @@ export function ItemsProvider({children}){
     const [items, setItems] = useState([])
 
     function handleAddingNewItem(value) {
-        const id = items.length ? items.length : 0
+        const id = uuid4()
         const newItem = {
             id: id,
             item: value,

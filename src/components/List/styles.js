@@ -22,6 +22,7 @@ export const Item = styled.li`
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid ${props => props.theme.input.placeHolder};
+    background-color: ${props => props.theme.background};
     transition: 0.2s;
 `
 
