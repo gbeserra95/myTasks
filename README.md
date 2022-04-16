@@ -24,7 +24,7 @@ Get organized with **myTasks**, your dynamic to-do-list that will help you with 
 
 1. Clone the repo with `git clone https://github.com/gbeserra95/myTasks.git`
 
-2. Install yarn packages with `yarn Install`
+2. Install yarn packages with `yarn install`
 
 3. Run `yarn start`
 
