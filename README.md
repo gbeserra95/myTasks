@@ -22,23 +22,24 @@ Get organized with **myTasks**, your dynamic to-do-list that will help you with 
 
 ## Installation
 
-1. Clone the repo
+1. Clone the repo<br>
    `git clone https://github.com/gbeserra95/myTasks.git`
 
-2. Install yarn packages
+2. Install yarn packages<br>
    `yarn Install`
 
-3. Run
+3. Run<br>
    `yarn start`
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License.
+See `LICENSE.txt` for more information.
 
 ## Author
 
-Created by [Gabriel Beserra](https://github.com/gbeserra95).
-Fins me on my [LinkedIn](https://www.linkedin.com/in/-gabrielbeserra/)!
+Created by [Gabriel Beserra](https://github.com/gbeserra95).<br>
+Find me on [LinkedIn](https://www.linkedin.com/in/-gabrielbeserra/)!
 
 Cheers! 🍻
 
