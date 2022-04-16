@@ -1,6 +1,5 @@
 <div align="center">
     <img src="/src/assets/logo/myTasks.png" alt="myTasks logo" />
-    <p><strong>Welcome to myTasks</strong></p>
     <p>A React to-do list developed for study purposes</p>
 </div>
 
@@ -8,7 +7,7 @@
     <a href="#">View Demo</a>
 </div>
 
-# About
+## About
 
 Get organized with **myTasks**, your dynamic to-do-list that will help you with your studies and everyday tasks. Change the order of your list by **dragging** and **dropping** the items among them. Press **enter** or hit **add** to add a new item. **Double click** an item to edit it.
 
