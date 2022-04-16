@@ -1,4 +1,4 @@
-<div style="text-align: center;">
+<div style="align: center;">
     <img src="/src/assets/logo/myTasks.png" alt="myTasks logo" />
     <h2>Welcome to myTasks</h2>
     <p>A React To-do list developed for study purposes</p>
@@ -12,10 +12,6 @@
 
 Get organized with **myTasks**, your dynamic to-do-list that will help you with your studies and everyday tasks. Change the order of your list by **dragging** and **dropping** the items among them. Press **enter** or hit **add** to add a new item. **Double click** an item to edit it.
 
-<div style="text-align: right;">
-    <a href="#">View Demo</a>
-</div>
-
 ## Built with
 
 - [React.js](https://pt-br.reactjs.org/)
@@ -24,10 +20,6 @@ Get organized with **myTasks**, your dynamic to-do-list that will help you with 
 - [Styled Icons](https://styled-icons.dev/)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [React Switch](https://github.com/markusenglund/react-switch)
-
-<div style="text-align: right;">
-    <a href="#">View Demo</a>
-</div>
 
 ## Installation
 
@@ -63,18 +55,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Author
 
-Created by [Gabriel Beserra](https://github.com/gbeserra95)
+Created by [Gabriel Beserra](https://github.com/gbeserra95).
 
-Feel free to contact me!
-
-<div style="display: flex;">
-  <a href="https://www.linkedin.com/in/-gabrielbeserra/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn logo">
-  </a>  
-</div>
+Feel free to contact me on my [LinkedIn](https://www.linkedin.com/in/-gabrielbeserra/)!
 
 Cheers! 🍻
 
-<div style="text-align: right;">
-    <a href="#">View Demo</a>
+<div style="align: right;">
+    <a href="#">(back to top)</a>
 </div>
