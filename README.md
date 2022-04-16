@@ -1,10 +1,10 @@
-<div style="align: center;">
+<div align="center">
     <img src="/src/assets/logo/myTasks.png" alt="myTasks logo" />
     <h2>Welcome to myTasks</h2>
     <p>A React To-do list developed for study purposes</p>
 </div>
 
-<div style="display: flex; justify-content: center;">
+<div align="center">
     <a href="#">View Demo</a>
 </div>
 
@@ -41,17 +41,9 @@ yarn Install
 yarn start
 ```
 
-<div style="text-align: right;">
-    <a href="#">View Demo</a>
-</div>
-
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<div style="text-align: right;">
-    <a href="#">View Demo</a>
-</div>
 
 ## Author
 
@@ -61,6 +53,6 @@ Feel free to contact me on my [LinkedIn](https://www.linkedin.com/in/-gabrielbes
 
 Cheers! 🍻
 
-<div style="align: right;">
+<div align="right">
     <a href="#">(back to top)</a>
 </div>
