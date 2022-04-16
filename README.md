@@ -42,4 +42,6 @@ Find me on [LinkedIn](https://www.linkedin.com/in/-gabrielbeserra/)!
 
 Cheers! 🍻
 
-<a href="#">back to top</a>
+<div align="right">
+    <a href="#">back to top</a>
+</div>
