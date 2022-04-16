@@ -9,9 +9,6 @@
 
 ## About
 
-![myTasks](https://user-images.githubusercontent.com/47508755/163694307-28628f95-2bde-4cc6-a32c-e95792b648fc.png){ width="800" height="600" style="display: block; margin: 0 auto" }
-
-
 Get organized with **myTasks**, your dynamic to-do-list that will help you with your studies and everyday tasks. Change the order of your list by **dragging** and **dropping** the items among them. Press **enter** or hit **add** to add a new item. **Double click** an item to edit it.
 
 ## Built with
