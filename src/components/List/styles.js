@@ -5,8 +5,8 @@ import { Pencil } from "@styled-icons/boxicons-regular/Pencil"
 export const Container = styled.ul`
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     width: 100%;
+    transition: 0.2s;
 
     div {
         display: flex;

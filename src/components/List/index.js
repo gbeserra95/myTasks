@@ -1,12 +1,13 @@
 import React, { useContext } from "react"
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import { ItemsContext } from "../../contexts/items";
+import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd"
+import { ItemsContext } from "../../contexts/items"
 import Checkbox from "../Checkbox";
+import { useTheme } from "styled-components";
 import * as S from "./styles"
-
 
 function List() {
   const { items, setItems } = useContext(ItemsContext)
+  const theme = useTheme()
 
   function handleCheckUncheck(item) {   
     let myObj = items.map(element => {
@@ -20,39 +21,60 @@ function List() {
       return element
     })
 
-     localStorage.setItem("items", JSON.stringify(myObj))
      setItems(myObj)
   }
 
   function handleDeleteItem(item) {
     let myObj = items
-    myObj.splice(item.id, 1)
-    
-    localStorage.setItem("items", JSON.stringify(myObj))
+    let itemIndex
+
+    for(let element of myObj) {
+      if(element.id === item.id)
+        itemIndex = myObj.indexOf(element)
+    }
+
+    myObj.splice(itemIndex, 1)
     setItems(myObj)
   }
 
   function handleOnDragEnd(result){
-    if (!result.destination) return;
+    if (!result.destination) 
+      return
 
     const myObj = Array.from(items);
     const [reorderedItem] = myObj.splice(result.source.index, 1);
     myObj.splice(result.destination.index, 0, reorderedItem);
-
-    localStorage.setItem("items", JSON.stringify(myObj))
     setItems(myObj);
+  }
+
+  function getItemStyle (isDragging, draggableStyle) {
+    return ({
+      backgroundColor: isDragging ? `${theme.button.hover}90` : theme.background,
+      // styles we need to apply on draggables
+      ...draggableStyle
+    })
   }
 
   return (
     <DragDropContext onDragEnd={handleOnDragEnd}>
-      <Droppable droppableId="list-0">
+      <Droppable droppableId="droppable">
         {(provided) => (
-          <S.Container {...provided.droppableProps} ref={provided.innerRef}>
-            { items &&
-              items.map((item, index) => (
+          <S.Container 
+            {...provided.droppableProps}
+            ref={provided.innerRef}
+          >
+            {items.map((item, index) => (
                 <Draggable key={item.id} draggableId={item.id} index={index}>
-                  {(provided) => (
-                    <S.Item ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
+                  {(provided, snapshot) => (
+                    <S.Item
+                      ref={provided.innerRef}
+                      {...provided.draggableProps}
+                      {...provided.dragHandleProps}
+                      style={getItemStyle(
+                        snapshot.isDragging,
+                        provided.draggableProps.style
+                      )}
+                    >
                       <Checkbox
                         onClick={() => handleCheckUncheck(item)}
                         checked={item.checked} 

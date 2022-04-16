@@ -6,6 +6,11 @@ export const ItemsContext = createContext([])
 export function ItemsProvider({children}){
     const [items, setItems] = useState([])
 
+    function handleSettingItems(value) {
+      localStorage.setItem("items", JSON.stringify(value))
+      setItems(value);
+    }
+
     function handleAddingNewItem(value) {
         const id = uuid4()
         const newItem = {
@@ -36,7 +41,7 @@ export function ItemsProvider({children}){
         <ItemsContext.Provider 
             value={{
                 items,
-                setItems, 
+                setItems: handleSettingItems, 
                 addNewItem: handleAddingNewItem 
             }}>
             {children}
