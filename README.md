@@ -1,7 +1,7 @@
 <div align="center">
     <img src="/src/assets/logo/myTasks.png" alt="myTasks logo" />
-    <h2>Welcome to myTasks</h2>
-    <p>A React To-do list developed for study purposes</p>
+    <p><strong>Welcome to myTasks</strong></p>
+    <p>A React to-do list developed for study purposes</p>
 </div>
 
 <div align="center">
@@ -24,22 +24,13 @@ Get organized with **myTasks**, your dynamic to-do-list that will help you with 
 ## Installation
 
 1. Clone the repo
-
-```
-git clone https://github.com/gbeserra95/myTasks.git
-```
+   `git clone https://github.com/gbeserra95/myTasks.git`
 
 2. Install yarn packages
-
-```
-yarn Install
-```
+   `yarn Install`
 
 3. Run
-
-```
-yarn start
-```
+   `yarn start`
 
 ## License
 
@@ -48,8 +39,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Author
 
 Created by [Gabriel Beserra](https://github.com/gbeserra95).
-
-Feel free to contact me on my [LinkedIn](https://www.linkedin.com/in/-gabrielbeserra/)!
+Fins me on my [LinkedIn](https://www.linkedin.com/in/-gabrielbeserra/)!
 
 Cheers! 🍻
 
