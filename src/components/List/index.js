@@ -49,7 +49,7 @@ function List() {
 
   function getItemStyle (isDragging, draggableStyle) {
     return ({
-      backgroundColor: isDragging ? `${theme.button.hover}90` : theme.background,
+      backgroundColor: isDragging ? `${theme.button.hover}90` : "transparent",
       // styles we need to apply on draggables
       ...draggableStyle
     })

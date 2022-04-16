@@ -21,6 +21,7 @@ export const Container = styled.div`
         text-decoration: ${props => props.checked ? "line-through" : "none"};
         text-decoration-color: ${props => props.theme.text.bold};
         line-height: 1.5rem;
+        cursor: text;
     }
 
     form {

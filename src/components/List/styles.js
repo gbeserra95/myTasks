@@ -6,7 +6,6 @@ export const Container = styled.ul`
     display: flex;
     flex-direction: column;
     width: 100%;
-    transition: 0.2s;
 
     div {
         display: flex;
@@ -23,7 +22,6 @@ export const Item = styled.li`
     align-items: center;
     border-bottom: 2px solid ${props => props.theme.input.placeHolder};
     background-color: ${props => props.theme.background};
-    transition: 0.2s;
 `
 
 export const TrashIcon = styled(Trash)`
