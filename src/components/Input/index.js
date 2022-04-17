@@ -7,7 +7,7 @@ import * as S from "./styles"
 function Input() {
     const { language } = useContext(LanguageContext)
     const { addNewItem } = useContext(ItemsContext)
-    const [userInput, setUserInput] = useState([])
+    const [userInput, setUserInput] = useState("")
 
     function handleSubmit(event) {
         event.preventDefault()

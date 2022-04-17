@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import LOGO from '../../assets/logo/myTasks.png'
+import LOGO from '../../assets/logo/myTasks.webp'
 
 export const Container = styled.header`
   display: flex;

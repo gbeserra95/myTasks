@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import brFlag from "../../assets/images/flag_brazil.png"
-import ukFlag from "../../assets/images/flag_uk.png"
-import esFlag from "../../assets/images/flag_spain.png"
+import brFlag from "../../assets/images/flag_brazil.webp"
+import ukFlag from "../../assets/images/flag_uk.webp"
+import esFlag from "../../assets/images/flag_spain.webp"
 
 export const Flag = styled.div`
     border-radius: 0.275rem;
