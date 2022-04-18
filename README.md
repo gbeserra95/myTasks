@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="/src/assets/logo/myTasks.png" alt="myTasks logo" />
+    <img src="/src/assets/logo/myTasks.webp" alt="myTasks logo" />
     <p>A React to-do list developed for study purposes</p>
 </div>
 
