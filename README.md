@@ -13,7 +13,7 @@ Get organized with **myTasks**, your dynamic to-do-list that will help you with 
 
 ## Built with
 
-- [React.js](https://pt-br.reactjs.org/)
+- [React](https://pt-br.reactjs.org/)
 - [React Beautiful Drag and Drop](https://github.com/atlassian/react-beautiful-dnd)
 - [Styled Components](https://styled-components.com/)
 - [Styled Icons](https://styled-icons.dev/)
