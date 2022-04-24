@@ -15,10 +15,11 @@ Get organized with **myTasks**, your dynamic to-do-list that will help you with 
 
 - [React](https://pt-br.reactjs.org/)
 - [React Beautiful Drag and Drop](https://github.com/atlassian/react-beautiful-dnd)
-- [Styled Components](https://styled-components.com/)
-- [Styled Icons](https://styled-icons.dev/)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [React Switch](https://github.com/markusenglund/react-switch)
+- [Styled Components](https://styled-components.com/)
+- [Styled Icons](https://styled-icons.dev/)
+
 
 ## Installation
 
